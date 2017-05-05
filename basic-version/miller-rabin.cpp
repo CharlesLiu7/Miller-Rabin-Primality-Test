@@ -1,7 +1,7 @@
 /*
  * The Miller-Rabin primality test
  *
- * Written by Huiqi Liu 5/5/2017
+ * Written by Charles Liu 5/5/2017
  *
  * NOTE:
  *	The code uses modular exponentiation by repeated squaring, the running

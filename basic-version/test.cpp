@@ -3,7 +3,7 @@
  *
  * This is a code for testing the algorithm writen in miller-rabin.cpp
  *
- * Written by Huiqi Liu 5/5/2017
+ * Written by Charles Liu 5/5/2017
  */
 
 #include "miller-rabin.h"
@@ -29,7 +29,7 @@ int main() {
             "produce different results.  That is why you might see incorrect\n"
             "results below, from time to time.\n"
             "\n"
-            "Written by Huiqi Liu 5/5/2017\n"
+            "Written by Charles Liu 5/5/2017\n"
             "\n"
          << endl;
 
