@@ -38,18 +38,6 @@ static mt19937 mt(time(0));
  * See http://en.wikipedia.org/wiki/Modular_exponentiation
  */
 uint1024_t pow_mod(uint1024_t a, uint1024_t x, uint1024_t n) {
-    /*
-     * Note that this code is sensitive to overflowing for testing of large
-     * prime numbers.  The `a*r´ and `a*a´ operations can overflow.  One easy
-     * way of solving this is to use 128-bit precision for calculating a*b % n,
-     * since the mod operator should always get us back to 64bits again.
-     *
-     * You can either use GCC's built-in __int128_t or use
-     *
-     * typedef unsigned int uint128_t __attribute__((mode(TI)));
-     *
-     * to create a 128-bit datatype.
-     */
     uint1024_t r = 1;
     while (x) {
         if ((x & 1) == 1)
