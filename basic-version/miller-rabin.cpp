@@ -74,6 +74,7 @@ bool is_prime(size_t n, int k) {
     for (; !(d & 1); ++s, d >>= 1)
         ; // loop
 
+    // Here, we CANNOT set it static
     uniform_int_distribution<size_t> u(2, n - 2);
     for (int i = 0; i < k; ++i) {
         size_t a = u(e);
